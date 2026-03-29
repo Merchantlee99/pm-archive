@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TPM Field Guide / Home First View Prototype</title>
+  <meta name="description" content="TPM Field Guide 홈 first view 시각 셸 프로토타입" />
+  <link rel="stylesheet" href="./field-guide.css" />
+</head>
+<body>
+  <header class="fg-header">
+    <div class="fg-header__inner">
+      <a class="fg-brand" href="#">
+        <span>Sanginn.dev</span>
+        <small>TPM Field Guide</small>
+      </a>
+
+      <nav class="fg-nav" aria-label="주요 탐색">
+        <a href="#writing">글</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#notes">작업 방식</a>
+        <a href="#direction">소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="fg-main">
+    <section class="fg-hero">
+      <div class="fg-hero__plane" aria-hidden="true"></div>
+
+      <div class="fg-hero__grid">
+        <div>
+          <p class="fg-eyebrow">TPM Field Guide</p>
+          <h1 class="fg-hero__title">
+            <span>고객의 신호를</span>
+            <span>구조와 판단으로</span>
+            <span>연결하는 사람</span>
+          </h1>
+          <p class="fg-hero__description">
+            고객과 제품, 인터페이스와 시스템을 읽고 기록하며 TPM으로 수렴해가는 사람의 가이드북을 만듭니다.
+          </p>
+
+          <div class="fg-actions">
+            <a class="fg-button" href="#writing">대표 글 보기</a>
+            <a class="fg-button--secondary" href="#projects">대표 프로젝트 보기</a>
+          </div>
+        </div>
+
+        <aside class="fg-hero__side" aria-label="현재 집중 중인 레이어">
+          <div class="fg-glass-panel" id="tilt-panel">
+            <div class="fg-glass-panel__rail" aria-hidden="true"></div>
+            <div class="fg-glass-panel__content">
+              <p class="fg-meta">Current Focus</p>
+
+              <div class="fg-note-list">
+                <article class="fg-note">
+                  <span>Writing Lead</span>
+                  <strong>기능 요청이 아니라 사용자의 해결 기대를 해석하는 글</strong>
+                </article>
+                <article class="fg-note">
+                  <span>Project Lens</span>
+                  <strong>TripPixel을 합의 구조와 공유 흐름 중심으로 다시 읽기</strong>
+                </article>
+                <article class="fg-note">
+                  <span>Next Layer</span>
+                  <strong>기획, 화면, API, 협업 구조를 같은 리듬 안에서 정리하기</strong>
+                </article>
+              </div>
+
+              <div class="fg-panel-slab" aria-hidden="true">
+                <div class="fg-panel-slab__stack">
+                  <div class="fg-panel-slab__item">
+                    <strong>Observe</strong>
+                    <span class="fg-meta">signal</span>
+                  </div>
+                  <div class="fg-panel-slab__item">
+                    <strong>Frame</strong>
+                    <span class="fg-meta">structure</span>
+                  </div>
+                  <div class="fg-panel-slab__item">
+                    <strong>Ship</strong>
+                    <span class="fg-meta">execution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="writing" class="fg-section">
+      <div class="fg-shell-wide fg-stage">
+        <div class="fg-stage__head">
+          <div>
+            <p class="fg-eyebrow">Lead Writing</p>
+            <h2>생각을 먼저 보여주는 대표 글 스테이지</h2>
+            <p>홈에서 가장 먼저 보이는 증거는 글입니다. 프로젝트 전에 어떤 기준으로 문제를 읽는지 먼저 드러냅니다.</p>
+          </div>
+          <a class="fg-inline-link" href="#">글 아카이브 보기</a>
+        </div>
+
+        <div class="fg-writing-stage">
+          <div class="fg-writing-stage__copy">
+            <div class="fg-stage-meta">
+              <span>Customer</span>
+              <span>7분 읽기</span>
+            </div>
+            <h3>고객이 원하는 것은 기능이 아니라 해결이다</h3>
+            <p>
+              사용자는 종종 기능 언어로 말하지만, 실제로는 시간을 줄이고 불확실성을 덜고 싶은 경우가 많습니다.
+              이 글은 요청을 그대로 쌓는 대신, 해결의 형태를 다시 정의하는 기준을 남깁니다.
+            </p>
+            <a class="fg-inline-link" href="#">이 글 읽기</a>
+          </div>
+
+          <div class="fg-stage-visual">
+            <div class="fg-stage-visual__quote">
+              <p class="fg-meta">Field Note</p>
+              <strong>
+                사용자는 기능 이름을 말해도, 실제로는 맥락을 더 적은 단계로 해결해주길 기대한다.
+              </strong>
+            </div>
+            <div class="fg-stage-visual__rail" aria-hidden="true"></div>
+            <div class="fg-stage-visual__art" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="fg-section fg-section--soft">
+      <div class="fg-shell-wide fg-stage">
+        <div class="fg-stage__head">
+          <div>
+            <p class="fg-eyebrow">Featured Project</p>
+            <h2>대표 프로젝트는 현장 사례처럼 읽히게 둡니다</h2>
+            <p>숫자 카드보다 구조와 맥락이 먼저 보이게, 프로젝트를 사례 무대처럼 배치합니다.</p>
+          </div>
+          <a class="fg-inline-link" href="#">프로젝트 전체 보기</a>
+        </div>
+
+        <div class="fg-project-stage">
+          <div class="fg-project-stage__copy">
+            <div class="fg-stage-meta">
+              <span>Lead Case</span>
+              <span>PM Lead</span>
+            </div>
+            <h3>TripPixel 서비스 기획</h3>
+            <p>
+              합의가 어려운 여행 계획을 AI 조율 경험으로 바꾼 사례입니다. 핵심은 기능 추가보다, 공유와 후보지 정렬의 구조를 다시 설계하는 데 있었습니다.
+            </p>
+            <a class="fg-inline-link" href="#">사례 읽기</a>
+          </div>
+
+          <div class="fg-project-stage__body">
+            <figure class="fg-project-stage__media">
+              <img src="https://picsum.photos/seed/trippixel-stage/1200/900" alt="TripPixel 프로젝트 목업 더미 이미지" loading="lazy" decoding="async" />
+            </figure>
+
+            <div class="fg-row-list">
+              <article class="fg-row">
+                <span class="fg-row__label">핵심 변화</span>
+                <div class="fg-row__body">
+                  <h3>후보지 공유 흐름을 중심으로 재구성</h3>
+                  <p>개별 기능보다 합의가 만들어지는 흐름 자체를 먼저 설계했습니다.</p>
+                </div>
+              </article>
+              <article class="fg-row">
+                <span class="fg-row__label">보조 사례</span>
+                <div class="fg-row__body">
+                  <h3>배달의민족 기능 개편 / 다정이 서비스 기획</h3>
+                  <p>다른 프로젝트에서도 같은 기준이 어떻게 적용됐는지 이어서 읽을 수 있습니다.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes" class="fg-section">
+      <div class="fg-shell">
+        <div class="fg-section-head">
+          <div>
+            <p class="fg-eyebrow">Field Notes</p>
+            <h2>어떻게 보고, 어떻게 정리하는지</h2>
+            <p>작업 방식은 카드 묶음이 아니라 짧은 행으로 정리합니다.</p>
+          </div>
+        </div>
+
+        <div class="fg-row-list">
+          <article class="fg-row">
+            <span class="fg-row__label">Customer</span>
+            <div class="fg-row__body">
+              <h3>요청 언어를 문제 정의로 번역합니다</h3>
+              <p>인터뷰와 VOC를 기능 목록으로 모으지 않고, 사용 맥락과 해결 기대를 먼저 구조화합니다.</p>
+            </div>
+          </article>
+          <article class="fg-row">
+            <span class="fg-row__label">Interface</span>
+            <div class="fg-row__body">
+              <h3>화면은 상태와 흐름이 읽히도록 설계합니다</h3>
+              <p>예쁜 화면보다 다음 행동이 자연스럽게 이어지는 구조를 우선합니다.</p>
+            </div>
+          </article>
+          <article class="fg-row">
+            <span class="fg-row__label">System</span>
+            <div class="fg-row__body">
+              <h3>기획과 엔드포인트를 같은 문장 안에서 봅니다</h3>
+              <p>프로덕트 결정이 데이터 구조와 API 연결까지 이어지도록 읽습니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="direction" class="fg-section fg-section--soft">
+      <div class="fg-shell">
+        <div class="fg-section-head">
+          <div>
+            <p class="fg-eyebrow">Toward TPM</p>
+            <h2>비전공자에서 TPM으로 향하는 경로</h2>
+          </div>
+        </div>
+
+        <div class="fg-strip">
+          <article class="fg-strip__item">
+            <span>Background</span>
+            <strong>고객과 문제를 읽는 기획 기반</strong>
+          </article>
+          <article class="fg-strip__item">
+            <span>Current</span>
+            <strong>제품과 시스템을 함께 보는 현재의 레이어</strong>
+          </article>
+          <article class="fg-strip__item">
+            <span>Next</span>
+            <strong>팀과 구조를 연결하는 TPM 역할</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fg-footer">
+    <div class="fg-footer__inner">
+      <div>
+        <p class="fg-eyebrow">Sanginn.dev</p>
+        <p>글과 프로젝트를 통해 기준을 남기고, 그 기준이 어떻게 실행으로 이어지는지 기록하는 개인 포트폴리오 사이트.</p>
+      </div>
+
+      <div class="fg-footer__links">
+        <a href="#">Signals</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const panel = document.getElementById('tilt-panel');
+
+    if (panel && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      panel.addEventListener('pointermove', (event) => {
+        const rect = panel.getBoundingClientRect();
+        const offsetX = (event.clientX - rect.left) / rect.width - 0.5;
+        const offsetY = (event.clientY - rect.top) / rect.height - 0.5;
+
+        panel.style.transform = `perspective(1200px) rotateX(${offsetY * -3}deg) rotateY(${offsetX * 4}deg) translateY(-2px)`;
+      });
+
+      panel.addEventListener('pointerleave', () => {
+        panel.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg)';
+      });
+    }
+  </script>
+</body>
+</html>

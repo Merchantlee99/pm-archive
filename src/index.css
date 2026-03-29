@@ -1,0 +1,74 @@
+:root {
+  --archive-bg: #06090f;
+  --archive-paper: rgba(255, 255, 255, 0.08);
+  --archive-paper-strong: rgba(255, 255, 255, 0.14);
+  --archive-text-main: rgba(248, 251, 255, 0.96);
+  --archive-text-sub: rgba(224, 231, 241, 0.8);
+  --archive-text-soft: rgba(196, 205, 220, 0.62);
+  --archive-accent: #a8c7ff;
+  --archive-line: rgba(255, 255, 255, 0.12);
+  --archive-line-strong: rgba(255, 255, 255, 0.22);
+  --archive-display-font: 'Figtree', 'Pretendard Variable', system-ui, sans-serif;
+  font-family:
+    'Pretendard Variable', 'Figtree', -apple-system, BlinkMacSystemFont, system-ui,
+    sans-serif;
+  color: var(--archive-text-main);
+  background: var(--archive-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--archive-bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100dvh;
+  background: var(--archive-bg);
+  color: var(--archive-text-main);
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  word-break: keep-all;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100dvh;
+}

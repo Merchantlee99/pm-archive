@@ -1,0 +1,45 @@
+{
+  "mode": "solo-pro",
+  "planner_of_record": "codex-product-planner",
+  "task_type": "ui_feature",
+  "docs": {
+    "prompt": true,
+    "prd": true,
+    "plan": true,
+    "implement": true,
+    "documentation": true,
+    "subagent_manifest": false
+  },
+  "planning": {
+    "readiness": "go",
+    "scope_freeze": true,
+    "required_gates": [
+      "review",
+      "qa"
+    ],
+    "security_needed": false,
+    "release_bound": false
+  },
+  "execution": {
+    "current_slice": "polish home archive hierarchy, quiet meta system, differentiate project view, and align mobile order",
+    "writer": "codex",
+    "write_paths": [
+      "src/App.jsx",
+      "src/App.css",
+      "src/index.css",
+      "src/components",
+      "src/data/homeData.js",
+      "Prompt.md",
+      "PRD.md",
+      "Plan.md",
+      "Implement.md",
+      "Documentation.md",
+      ".vibebuilder/runtime.json"
+    ],
+    "review_done": false,
+    "validation_done": false,
+    "qa_done": false,
+    "security_done": false,
+    "ship_done": false
+  }
+}
