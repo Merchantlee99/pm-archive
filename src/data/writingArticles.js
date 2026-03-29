@@ -1,11 +1,11 @@
-import alignedRaw from '../../../01_websites/src/content/writing/aligned-priorities-over-everyones-opinions.mdx?raw'
-import customerRaw from '../../../01_websites/src/content/writing/customer-wants-solution-not-feature.mdx?raw'
-import feedbackRaw from '../../../01_websites/src/content/writing/feedback-should-grow-the-team-not-attack-people.mdx?raw'
-import interfaceRaw from '../../../01_websites/src/content/writing/interface-retrospective.mdx?raw'
-import systemRaw from '../../../01_websites/src/content/writing/system-design-order.mdx?raw'
-import techPmRaw from '../../../01_websites/src/content/writing/tech-pm-first-step.mdx?raw'
-import vocRaw from '../../../01_websites/src/content/writing/voc-to-opportunity-analysis-loop.mdx?raw'
-import habitRaw from '../../../01_websites/src/content/writing/what-makes-a-service-habit-forming.mdx?raw'
+import alignedRaw from '../content/writing/aligned-priorities-over-everyones-opinions.mdx?raw'
+import customerRaw from '../content/writing/customer-wants-solution-not-feature.mdx?raw'
+import feedbackRaw from '../content/writing/feedback-should-grow-the-team-not-attack-people.mdx?raw'
+import interfaceRaw from '../content/writing/interface-retrospective.mdx?raw'
+import systemRaw from '../content/writing/system-design-order.mdx?raw'
+import techPmRaw from '../content/writing/tech-pm-first-step.mdx?raw'
+import vocRaw from '../content/writing/voc-to-opportunity-analysis-loop.mdx?raw'
+import habitRaw from '../content/writing/what-makes-a-service-habit-forming.mdx?raw'
 
 const categoryLabelMap = {
   analysis: '문제 재정의',
