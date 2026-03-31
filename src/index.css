@@ -1,13 +1,29 @@
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: url('/fonts/PretendardVariable.ttf') format('truetype');
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('/fonts/FigtreeVariable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --archive-bg: #06090f;
-  --archive-paper: rgba(255, 255, 255, 0.08);
-  --archive-paper-strong: rgba(255, 255, 255, 0.14);
-  --archive-text-main: rgba(248, 251, 255, 0.96);
-  --archive-text-sub: rgba(224, 231, 241, 0.8);
-  --archive-text-soft: rgba(196, 205, 220, 0.62);
-  --archive-accent: #a8c7ff;
-  --archive-line: rgba(255, 255, 255, 0.12);
-  --archive-line-strong: rgba(255, 255, 255, 0.22);
+  --archive-bg: #03111b;
+  --archive-paper: rgba(232, 244, 255, 0.08);
+  --archive-paper-strong: rgba(232, 244, 255, 0.14);
+  --archive-text-main: rgba(244, 250, 255, 0.97);
+  --archive-text-sub: rgba(219, 233, 245, 0.84);
+  --archive-text-soft: rgba(179, 203, 224, 0.72);
+  --archive-accent: #92ddff;
+  --archive-line: rgba(219, 235, 247, 0.14);
+  --archive-line-strong: rgba(224, 239, 251, 0.24);
   --archive-display-font: 'Figtree', 'Pretendard Variable', system-ui, sans-serif;
   font-family:
     'Pretendard Variable', 'Figtree', -apple-system, BlinkMacSystemFont, system-ui,

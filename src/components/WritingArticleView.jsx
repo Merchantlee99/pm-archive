@@ -1,3 +1,18 @@
+import { ArticleReferenceVisual } from "./ArticleReferenceVisual"
+
+function getLeadText(article) {
+  if (article.content) {
+    const firstParagraph = article.content
+      .split(/\n\s*\n/)
+      .map((block) => block.trim().replace(/\s+/g, ' '))
+      .find((block) => block && !block.startsWith('## ') && !block.startsWith('### '))
+
+    if (firstParagraph) return firstParagraph
+  }
+
+  return article.excerpt
+}
+
 function parseArticleBlocks(content) {
   const lines = content.split('\n')
   const blocks = []
@@ -92,14 +107,17 @@ function ArticleNavButton({ children, onClick, disabled = false }) {
 
 export function WritingArticleView({ article, previousArticle, nextArticle, onBack, onSelectArticle }) {
   const blocks = parseArticleBlocks(article.content)
+  const leadText = getLeadText(article)
 
   return (
     <article className="archive-article-view">
       <header className="archive-article-view__header">
         <p className="archive-note">{article.meta}</p>
         <h1>{article.title}</h1>
-        <p className="archive-article-view__excerpt">{article.excerpt}</p>
+        <p className="archive-article-view__excerpt">{leadText}</p>
       </header>
+
+      {article.referenceVisual ? <ArticleReferenceVisual visual={article.referenceVisual} /> : null}
 
       <div className="archive-article-body">
         {blocks.map((block, index) => {
